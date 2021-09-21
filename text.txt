@@ -3,4 +3,4 @@ To Do Tasks: 1) Create individual branches for all team members. 2) CSS for the 
 Acknowledgement By Team members ("Noted, name"):
 Tasks: 1,2
 Noted, Yash. 
-Do Bla BLa Bla -(omshejul)
+Design Basic Layout Of the site
