@@ -1,3 +1,5 @@
+Buttons' layouts: Sign Up-Yash, Arzoo-Find Food, Aditi-Enter Location, Om-Login.
+
 Updates for the changes made/to be made.
 To Do Tasks: 1) Create individual branches for all team members. 2) CSS for the HTML code added (demo buttons, rounded).
 Acknowledgement By Team members ("Noted, name"):
@@ -8,4 +10,4 @@ Decide Basic Layout Of the site
 Design UI/UX
 Decide how site works
 Code backend
-Login button 
+Login button
