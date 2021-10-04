@@ -2,10 +2,12 @@
     --background: #f5f5f5;
     --background-dark: #fae9e2;
     --color: #f2460dff;
-    --color-light: rgb(247, 167, 114);
+    --color-dark: rgb(177, 52, 10);
+    --color-light: rgb(236, 104, 15);
     --text:#292929;
     --white:#ffffff;
     --offwhite:#f3ddc8;
+    --radius:5px
 }
 ::selection {
     color: var(--background);
@@ -44,16 +46,58 @@
 .searchBox{
     display: flex;
     width: 100%;
-    margin-block: 30px;
+    margin-top: 30px;
 }
 .searchBox > input{
     border: none;
-    border-radius: 5px;
-    padding: 15px;
-    width: 85%;
+    border-radius: var(--radius);
     height: 5ch;
+    padding: 15px;
+    width: 100%;
     box-shadow: 0 0 0px 02px var(--color);
 }
+.submitbtn{
+    display: flex;
+    width: 100%;
+    justify-content:end;
+}
+.submitbtn > input{
+    margin: 15px 20px 30px 0px;
+    border: none;
+    border-radius: var(--radius);
+    height: 5ch;
+    padding: 15px;
+    width: 9cw;
+    background-color: var(--color);
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: 0 0 0px 02px var(--color);
+    cursor: pointer;
+}
+.submitbtn > input:hover{
+    box-shadow: 0 0 0px 2px var(--color-light);
+    background-color: var(--color-light);
+    color: var(--white);
+}
+.submitbtn > input:active{
+    box-shadow: 0 0 0px 2px var(--color);
+    background-color: var(--color-dark);
+    color: var(--white);
+
+}
+.geoLocation{
+    cursor: pointer;
+    border: none;
+    transform: translateX(-35px);
+    aspect-ratio: 1/1;
+    width: 2.5ch ;
+    transition:filter 00.25s ease-out;
+}
+.geoLocation:hover {
+    transition:filter 00.25s ease-out;
+    filter: saturate(1900%);
+}
+
 
 /* nav */
 nav{
@@ -125,6 +169,7 @@ header h2{
     background-color: var(--color);
 }
 
+
 @media screen and (min-width:1014px) {
     .mainBody{
         margin-top: 20px;
@@ -187,6 +232,7 @@ header h2{
 
     }
     .header-links{
+        z-index: 999;
         position: absolute;
         right: 0px;
         height: 30vh;
