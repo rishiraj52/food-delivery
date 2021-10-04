@@ -1,34 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
-    --background: #ffffff98;
+    --background: #f5f5f5;
     --background-dark: #fae9e2;
-    --color: #ff5100;
+    --color: #f2460dff;
     --color-light: rgb(247, 167, 114);
-    --black:#000000;
+    --text:#292929;
     --white:#ffffff;
     --offwhite:#f3ddc8;
 }
+::selection {
+    color: var(--background);
+    background: var(--color);
+  }
 *{
+    background-color:var(--background);
+    color: var(--text);
     margin: 0;
     padding: 0;
     font-family: 'Work Sans','sans-serif';
     box-sizing: border-box;
 }
+
+.logoName{
+    text-decoration: none;
+    color: var(--color);
+    user-select: none;
+}
 .logo{
+    user-select: none;
     padding: 20px;
     display: flex;
     justify-content:end;
     align-items: center;
 }
-.logo > img{
+.logo > a >img{
     width: 60px;
 }
 .card{
+    margin-inline: 15px;
     max-width: 65ch;
 
 }
-.dummytext{
-    text-align: justify;
+
+.searchBox{
+    display: flex;
+    width: 100%;
+    margin-block: 30px;
+}
+.searchBox > input{
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 85%;
+    height: 5ch;
+    box-shadow: 0 0 0px 02px var(--color);
 }
 
 /* nav */
@@ -37,7 +61,7 @@ nav{
     grid-template-columns: 10vw 40vw 30vw;
     justify-content:center;
     align-items: center;
-    background-color: var(--background-dark);
+    /* background-color: var(--background-dark); */
 }
 
 .header-links{
@@ -58,6 +82,7 @@ nav{
 
 }
 
+
 /* @keyframes ColorPalette {
 	0% {
 		color: var(--color);
@@ -76,7 +101,6 @@ nav{
 	}
 } */
 .header-links a:hover{
-    border-radius: 6px;
     color: var(--color-light);
     
     /* animation-name: ColorPalette;
@@ -110,6 +134,7 @@ header h2{
         justify-self: center;
     }
     .cdLeft{
+        width: 80%;
         justify-self: right;
     }
     .card{
@@ -128,8 +153,6 @@ header h2{
     .mainBody{
         display: grid;
         justify-content: center;
-    }
-    .mainBody{
         margin: 5px;
         margin-top: 10px;
     }
@@ -150,21 +173,25 @@ header h2{
         display: flex;
         justify-content:center;
         align-items: center;
-        background-color: var(--background-dark);
+        /* background-color: var(--background-dark); */
     }
     body{
         overflow-x: hidden;
     }
+    .header-links *{
+        background-color:rgba(211, 30, 30, 0);
+    }
     .header-links a{
-        color: var(--white);
+        background-color:rgba(211, 30, 30, 0);
+        color: var(--background);
 
     }
     .header-links{
         position: absolute;
         right: 0px;
-        height: 50vh;
+        height: 30vh;
         top: 15vh;
-        background-color: var(--color);
+        background-color:var(--color);
         border-radius: 16px 0px 0px 16px ;
         display: flex;
         flex-direction: column;
@@ -181,6 +208,9 @@ header h2{
     .menu{
         transition: transform 0.5s ease;
         display: block;
+    }
+    .searchBox{
+        justify-content: center;
     }
 
 
