@@ -3,9 +3,10 @@
     --background: #ffffff98;
     --background-dark: #fae9e2;
     --color: #ff5100;
-    --color-light: #ca7756;
+    --color-light: rgb(247, 167, 114);
     --black:#000000;
     --white:#ffffff;
+    --offwhite:#f3ddc8;
 }
 *{
     margin: 0;
@@ -22,6 +23,14 @@
 .logo > img{
     width: 60px;
 }
+.card{
+    max-width: 65ch;
+
+}
+.dummytext{
+    text-align: justify;
+}
+
 /* nav */
 nav{
     display: grid;
@@ -49,7 +58,7 @@ nav{
 
 }
 
-@keyframes ColorPalette {
+/* @keyframes ColorPalette {
 	0% {
 		color: var(--color);
 	}
@@ -65,15 +74,16 @@ nav{
 	100% {
 		color: var(--color);
 	}
-}
+} */
 .header-links a:hover{
-    box-shadow: var(--black);
     border-radius: 6px;
-    animation-name: ColorPalette;
+    color: var(--color-light);
+    
+    /* animation-name: ColorPalette;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	animation-timing-function: linear;
+	animation-timing-function: linear; */
 }
 header h2{
     color: var(--color);
@@ -91,8 +101,38 @@ header h2{
     background-color: var(--color);
 }
 
+@media screen and (min-width:1014px) {
+    .mainBody{
+        margin-top: 20px;
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-self: center;
+    }
+    .cdLeft{
+        justify-self: right;
+    }
+    .card{
+        padding: 1vw;
+        max-width: 65ch;
+    
+    }
+    .card>h1{
+        margin-bottom: 10px;
+    }
+
+}
 @media screen and (max-width:1014px) {
 
+
+    .mainBody{
+        display: grid;
+        justify-content: center;
+    }
+    .mainBody{
+        margin: 5px;
+        margin-top: 10px;
+    }
     .logo > img{
         width: 40px;
     }
