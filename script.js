@@ -28,8 +28,8 @@ function getLocation() {
   }
 
 function success(position) {
-    console.log('Latitude:', position.coords.latitude);
-    console.log('Longitude:', position.coords.longitude);
+    console.log(position.coords.latitude,',', position.coords.longitude);
+    console.log();
   }
 function error() {
     console.log('Geolocation error!');

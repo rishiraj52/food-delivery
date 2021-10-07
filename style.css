@@ -204,6 +204,9 @@ header h2{
     .logo > img{
         width: 40px;
     }
+    .logo:focus{
+        outline:none !important;
+    }
     .logo{
         padding: 10px 10px 10px 10px;
         display: flex;
@@ -252,16 +255,23 @@ header h2{
 
     }
     .menu{
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease-in-out;
         display: block;
     }
     .searchBox{
         justify-content: center;
     }
+    .menuLines{
+        transition: 0.5s ease-in-out;
+    }
+    .menuLines:focus{
+        outline:none !important;
+    }
 
 
     
 }
+
 .header-active{
     transform: translateX(0%);
 }
@@ -277,14 +287,14 @@ header h2{
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
+    transition: transform 0.5s ease-in-out;
 }
 .toggle .line2{
     opacity: 0;
-    transition: opacity 0.1s ease;
-
+    
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+    transition: transform 0.5s ease;
 
 }
-/* https://www.youtube.com/watch?v=gXkqy0b4M5g */
