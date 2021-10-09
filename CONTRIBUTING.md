@@ -1,4 +1,4 @@
-REQUESTS for Contributions toward the issues in this repo will be revieved from 11th October 2021
+REQUESTS for Contributions toward the issues in this repo will be revieved from 11th October 2021 
 
 CODEOFCONDUCT
 Be nice. No harassment, trolling, or spamming.
